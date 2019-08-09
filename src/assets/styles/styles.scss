@@ -4,8 +4,8 @@ $titleFont: 'NeuzeitGrotesk', sans-serif;
 $container: 1250px;
 $textFont-size: 1rem;
 
-@import "normalize.scss";
-@import "fonts.scss";
+@import 'normalize.scss';
+@import 'fonts.scss';
 
 .container {
   max-width: $container;
