@@ -1,5 +1,5 @@
 import Router from './services/router';
-import './assets/styles/index.scss';
+import './assets/styles/styles.scss';
 
 const contentDiv = document.getElementById('app');
 const homeLinks = document.getElementsByClassName('home-link');

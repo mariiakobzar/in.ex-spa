@@ -7,12 +7,6 @@ $textFont-size: 1rem;
 @import "normalize.scss";
 @import "fonts.scss";
 
-@import "main.scss";
-@import "shop.scss";
-@import "about.scss";
-@import "forum.scss";
-@import "contact.scss";
-
 .container {
   max-width: $container;
   height: 100%;

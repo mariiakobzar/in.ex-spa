@@ -5,13 +5,6 @@ Handlebars.registerHelper('img', (object) => {
   return new Handlebars.SafeString(str);
 });
 
-Handlebars.registerHelper('if_eq', (a, b, opts) => {
-  if (a === b) {
-    return opts.fn(this);
-  }
-  return opts.inverse(this);
-});
-
 Handlebars.registerHelper('eachForIndex', (context, options) => {
   let ret = '';
   let counter = 0;
@@ -26,3 +19,4 @@ Handlebars.registerHelper('eachForIndex', (context, options) => {
   }
   return ret;
 });
+
