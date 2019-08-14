@@ -12,6 +12,7 @@ $textFont-size: 1rem;
   max-width: $container;
   height: 100%;
   margin: 0 auto;
+  padding: 0 25px;
 }
 
 body {
@@ -553,6 +554,7 @@ body {
       padding-bottom: 25px;
 
       &__title {
+        text-align: center;
         margin-bottom: 15px;
         font-size: 2.2rem;
       }

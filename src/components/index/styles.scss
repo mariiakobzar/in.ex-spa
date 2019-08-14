@@ -433,6 +433,7 @@
 
 .select {
   position: relative;
+  cursor: pointer;
   width: 100%;
 
   & select {
@@ -457,7 +458,7 @@
   }
 
   &:after {
-    cursor: pointer;
+    pointer-events: none;
     content: " ";
     z-index: 1;
     position: absolute;
@@ -661,6 +662,10 @@
   .articles {
     padding: 0;
     padding-bottom: 220px;
+
+    & .container{
+      padding: 0;
+    }
 
     &-container {
       flex-direction: column;

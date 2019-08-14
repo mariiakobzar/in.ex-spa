@@ -1,5 +1,5 @@
 main {
-  background: rgba(232, 230, 230, 1);
+  background: rgba(232, 230, 230, 1) url('../../assets/images/bg-lines.png');
 }
 
 .navigation {
@@ -214,8 +214,42 @@ main {
     }
   }
 
-  &-body{
+  &-body {
     padding-bottom: 24px;
     font-size: 16px;
+  }
+}
+
+@media screen and (max-width : 480px) {
+
+  .navigation{
+    padding: 120px 0 0;
+    &-btns{
+      display: none;
+    }
+  }
+
+  .product {
+    flex-wrap: wrap;
+
+    &-image {
+      width: 100%;
+      margin: 0;
+
+      & p {
+        display: none;
+      }
+
+      &__img {
+        width: 90%;
+        padding-bottom: 90%;
+        margin: 0 auto;
+      }
+    }
+
+    &-info {
+      width: 100%;
+      margin: 0;
+    }
   }
 }

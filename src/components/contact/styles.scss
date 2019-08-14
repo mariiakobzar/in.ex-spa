@@ -1,7 +1,6 @@
 .contact {
-  padding-top: 200px;
-  padding-bottom: 100px;
-  background-image: url('../../assets/images/bg-lines.png');
+  padding-top: 150px;
+  padding-bottom: 50px;
   background-size: cover;
 
   &__title {
@@ -70,18 +69,19 @@
 }
 
 .contact-card {
-  display: flex;
   height: 300px;
 
+  & .container{
+    padding: 0 60px;
+  }
+
   &-form {
-    padding: 10px;
-    width: 40%;
-    background-color: #ea5823;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     input, textarea{
-      width: 75%;
+      width: 100%;
       border: 1px solid transparent;
       border-bottom-color: black;
       background-color: transparent;
@@ -111,7 +111,7 @@
     &__contacts{
       display: flex;
       justify-content: space-between;
-      width: 75%;
+      width: 100%;
       input{
         width: 49%;
       }
@@ -119,7 +119,36 @@
   }
 }
 
-#contact-card-map {
-  width: 60%;
-  height: 300px;
+@media screen and (max-width : 480px) {
+
+  .contact{
+     padding: 110px 0 20px;
+
+     &-info{
+       flex-direction: column;
+       &-text{
+         width: 100%;
+         padding-left: 5px;
+       }
+     }
+  }
+
+  .contact__title{
+    width: 100%;
+    padding: 10px;
+    font-size: 2rem;
+    & svg {
+      height: 27px;
+    }
+  }
+
+  .contact-card{
+    .container{
+      padding: 0 25px;
+    }
+  }
+
+  .contact-info__image{
+    display: none;
+  }
 }

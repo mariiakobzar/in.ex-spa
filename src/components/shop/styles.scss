@@ -11,8 +11,6 @@
 
 .shop {
   padding-top: 50px;
-  background-image: url('../../assets/images/bg-lines.png');
-  background-size: cover;
 
   .container {
     min-width: 100vw;
@@ -38,7 +36,7 @@
   color: white;
   padding: 0 20px;
 
-  &-btn{
+  &-btn {
     display: none;
     background-color: #1f1f1f;
     border: none;
@@ -53,13 +51,15 @@
     line-height: 70px;
     height: 70px;
     position: relative;
-    & i{
+
+    & i {
       display: none;
       position: absolute;
       right: 0;
       top: 32%;
       font-size: 21px;
-      &:hover{
+
+      &:hover {
         color: #ea5823;
       }
     }
@@ -121,7 +121,8 @@
     font-size: 14px;
     color: rgba($color: #fff, $alpha: .8);
 
-    &:hover, .active-collection-btn {
+    &:hover,
+    .active-collection-btn {
       color: #fff;
       font-weight: 700;
     }
@@ -135,7 +136,7 @@
     height: 18px;
     border-radius: 100%;
 
-    &.active-color-btn{
+    &.active-color-btn {
       border: 1.3px solid white;
     }
 
@@ -281,7 +282,7 @@
 
 @media screen and (max-width : 480px) {
 
-  main{
+  main {
     position: relative;
   }
 
@@ -307,6 +308,22 @@
     }
   }
 
+  .sort {
+    padding-top: 25px;
+    justify-content: center;
+
+    & .select {
+      width: 40px;
+      border: none;
+
+      & #select-sort {
+        color: #1f1f1f;
+        border: none;
+      }
+    }
+  }
+
+
   .filter {
     display: none;
     width: 100%;
@@ -314,11 +331,17 @@
     position: absolute;
     top: 0;
     z-index: 5;
-    &__title i{
-    display: block;
-    }
-    &-btn{
+    position: fixed;
+
+    &__title i {
       display: block;
+    }
+
+    &-btn {
+      display: block;
+      margin-right: 10px;
+      height: 40px;
+      font-size: 18px;
     }
   }
 }
