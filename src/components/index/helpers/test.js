@@ -19,4 +19,3 @@ Handlebars.registerHelper('eachForIndex', (context, options) => {
   }
   return ret;
 });
-

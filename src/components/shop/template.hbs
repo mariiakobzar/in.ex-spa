@@ -10,47 +10,45 @@
 <section class="shop">
   <div class="container">
     <div class="filter">
-      
-      <h2 class="filter__title">Filter by </h2>
-      <button class="close-btn"></button>
+      <h2 class="filter__title">Filter by <i class="far fa-times-circle"></i></h2>
       <div class="filter-head">
         <h3>Collection</h3>
-        <i class="plus"><span></span><span></span></i>
+        <i class="plus active"><span></span><span></span></i>
       </div>
       <div class="filter-body">
-        <ul class="filter-list">
+        <ul class="filter-list filter-collection">
           <li class="filter-list__item">
-            <a href="#">All</a>
+            <a href="#" class="allProducts active-collection-btn" onclick="return false">All</a>
           </li>
           <li class="filter-list__item">
-            <a href="#">Sports Bras</a>
+            <a href="#" class="allBras" onclick="return false">Sports Bras</a>
           </li>
           <li class="filter-list__item">
-            <a href="#">Tank Tops</a>
+            <a href="#" class="allTops" onclick="return false">Tank Tops</a>
           </li>
           <li class="filter-list__item">
-            <a href="#">Leggins</a>
+            <a href="#" class="allLeggins" onclick="return false">Leggins</a>
           </li>
           <li class="filter-list__item">
-            <a href="#">Jackets</a>
+            <a href="#" class="allJackets" onclick="return false">Jackets</a>
           </li>
           <li class="filter-list__item">
-            <a href="#">Sports</a>
+            <a href="#" class="allSports" onclick="return false">Sports</a>
           </li>
           <li class="filter-list__item">
-            <a href="#">New Arrivals</a>
+            <a href="#" class="allNew" onclick="return false">New Arrivals</a>
           </li>
           <li class="filter-list__item">
-            <a href="#">Best Sellers</a>
+            <a href="#" class="allBest" onclick="return false">Best Sellers</a>
           </li>
         </ul>
       </div>
 
-      <div class="filter-head">
+      <div class="filter-head filter-head-slider">
         <h3>Price</h3>
         <i class="plus"><span></span><span></span></i>
       </div>
-      <div class="filter-body">
+      <div class="filter-body visually-hidden">
         <div class="slider">
           <div class="bar">
             <div class="lp" data-pos="0"></div>
@@ -63,22 +61,21 @@
         <h3>Color</h3>
         <i class="plus"><span></span><span></span></i>
       </div>
-      <div class="filter-body">
-        <button data-color="blue"></button>
-        <button data-color="brown"></button>
-        <button data-color="pink"></button>
-        <button data-color="green"></button>
-        <button data-color="gray"></button>
-        <button data-color="orange"></button>
-        <button data-color="red"></button>
-        <button data-color="purple"></button>
+      <div class="filter-body filter-color visually-hidden">
+        <button class="blue"></button>
+        <button class="pink"></button>
+        <button class="green"></button>
+        <button class="gray"></button>
+        <button class="orange"></button>
+        <button class="red"></button>
+        <button class="purple"></button>
       </div>
 
       <div class="filter-head">
         <h3>Size</h3>
         <i class="plus"><span></span><span></span></i>
       </div>
-      <div class="filter-body">
+      <div class="filter-body visually-hidden">
         <ul class="filter-list">
           <li class="filter-list__item">
             <label class="cb-container">Large
@@ -103,7 +100,9 @@
     </div>
 
     <div class="shop-container">
+
       <div class="sort">
+        <button class="filter-btn">Filter</button>
         <div class="select">
           <select name="size" id="select-sort">
             <option selected disabled>Sort by</option>
@@ -119,7 +118,8 @@
       <div class="products-container">
 
       \{{#each products}}
-      <div class="item" data-price="\{{price}}" data-name="\{{name}}" data-id="\{{id}}" data-tag="\{{tag}}">
+      <div class="item active-filter active-price" data-price="\{{price}}" data-name="\{{name}}" 
+      data-id="\{{id}}" data-tag="\{{tag}}" data-type="\{{type}}" data-color="\{{color}}">
         <div class="item__image">
           \{{{img src}}}
           \{{#if tag}}

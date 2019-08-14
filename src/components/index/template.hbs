@@ -1,12 +1,12 @@
 <section class="hero">
   <div class="hero-main">
     <div class="hero-main-content">
-      <h1 class="hero-main-content__title">
+      <h1 class="hero-main-content__title wow fadeIn" data-wow-duration="2.5s">
         <span>IT'S TIME</span>
         <span>TO STEP UP</span>
         <span>YOUR GAME</span>
       </h1>
-      <a href="#" class="hero-main-content__btn">Shop now</a>
+      <a href="#" class="hero-main-content__btn wow fadeIn">Shop now</a>
     </div>
 
   </div>
@@ -20,16 +20,16 @@
 
 <section class="articles">
   <div class="container">
-    <div class="articles-container">
+    <div class="articles-container wow fadeIn">
       <div class="article">
         <img src="\images/article1.jpg" alt="">
-        <div class="article-box">
+        <div class="article-box wow fadeInLeft">
           <div class="article-box-content">
             <h3 class="article-box__title">
               <span>Shop new</span>
               <span>arrivals</span>
             </h3>
-            <a href="#">
+            <a href="#" class="wow fadeInUp" data-wow-delay="0.4s">
               <svg>
                 <use xlink:href="#svg-arrow"></use>
               </svg>
@@ -40,13 +40,13 @@
 
       <div class="article">
         <img src="\images/article2.jpg" alt="">
-        <div class="article-box">
+        <div class="article-box wow fadeInLeft">
           <div class="article-box-content">
             <h3 class="article-box__title">
               <span>Shop new</span>
               <span>bestsellers</span>
             </h3>
-            <a href="#">
+            <a href="#" class="wow fadeInUp" data-wow-delay="0.4s">
               <svg>
                 <use xlink:href="#svg-arrow"></use>
               </svg>
@@ -57,13 +57,13 @@
 
       <div class="article">
         <img src="\images/article3.jpg" alt="">
-        <div class="article-box">
+        <div class="article-box wow fadeInLeft">
           <div class="article-box-content">
             <h3 class="article-box__title">
               <span>Join our</span>
               <span>community</span>
             </h3>
-            <a href="#">
+            <a href="#" class="wow fadeInUp" data-wow-delay="0.4s">
               <svg>
                 <use xlink:href="#svg-arrow"></use>
               </svg>
@@ -75,7 +75,7 @@
   </div>
 
   <div class="big-article">
-    <div class="big-article-info">
+    <div class="big-article-info wow fadeInLeft">
       <h2 class="big-article-info__title">
         <span>Workout</span>
         <span>anytime,</span>
@@ -87,17 +87,17 @@
       </p>
       <a href="#" class="btn">Read More</a>
     </div>
-    <div class="big-article-image">
+    <div class="big-article-image wow fadeInUp">
       <img src="\images/girl.jpg" alt="girl">
     </div>
   </div>
 </section>
 
 <section class="arrivals">
-  <h3 class="arrivals__title">New arrivals</h3>
-  <div class="container" id="arrivals">
+  <h3 class="arrivals__title wow fadeIn">New arrivals</h3>
+  <div class="container wow fadeIn" id="arrivals">
     \{{#eachForIndex products}}
-    <div class="item">
+    <div class="item" data-price="\{{price}}" data-name="\{{name}}" data-id="\{{id}}" data-tag="\{{tag}}">
       <div class="item__image">
         \{{{img src}}}
         <div class="item--tag">
@@ -114,5 +114,5 @@
     </div>
     \{{/eachForIndex}}
   </div>
-  <a href="#" class="btn">Shop All</a>
+  <a href="#" class="btn wow fadeIn" data-wow-delay="0.2s">Shop All</a>
 </section>
