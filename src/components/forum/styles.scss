@@ -44,6 +44,12 @@
     color: #ea5823;
     border: 1px solid #ea5823;
     padding: 10px 20px;
+    transition: .3s;
+
+    &:hover{
+      background-color: #ea5823;
+      color: white;
+    }
   }
 
 }

@@ -438,13 +438,14 @@ body {
     }
 
     &.active {
+      position: relative;
       clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
     }
 
     &__body {
       position: relative;
       text-align: left;
-      overflow-y: scroll;
+      overflow-y: overlay;
       height: 65%;
       & .card-item {
         background-color: #1f1f1f;
@@ -511,6 +512,9 @@ body {
     }
 
     & .btn-cart {
+      position: absolute;
+      bottom: 0;
+      left: 18%;
       margin: 30px 0;
       padding: 15px 80px;
       display: inline-block;
